@@ -63,7 +63,6 @@ header h3:hover {
 .featured {
     display: flex;
     max-width: 100vw;
-    margin: 0.625rem;
 }
 
 .thumbnail {
@@ -125,9 +124,55 @@ header h3:hover {
 
 /* BLOG SELECTION */
 
-.blog-selection {
-    height: 100vh;
-    background-color: rgb(44, 44, 44);
+.flex-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 5rem;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(28, 28, 28);
+}
+
+.box {
+    display: flex;
+    background-image: url("temp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 60vh;  
+}
+
+.box-info {
+    background: rgb(240, 240, 240);
+    height: 40%;
+    margin-top: auto;
+}
+
+.box-info h2 {
+    margin: 1rem 0 0 1rem;
+    font-weight: 300;
+}
+
+.box-info h1 {
+    margin: 0 0 1rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.box-info p {
+    margin: 0 1rem 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.box-info a {
+    margin: 0 0 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: black;
 }
 
 /* LAPTOP MEDIA QUERIES */
@@ -148,11 +193,11 @@ header h3:hover {
     * {
         font-size: 30px;
     }
+
+    .thumbnail-info-text {
+        width: 70%;
+        max-width: 2000px;
+    }
 }
 
 /* MOBILE MEDIA QUERIES */
-
-.thumbnail-info-text {
-    width: 70%;
-    max-width: 2000px;
-}
